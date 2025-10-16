@@ -1,134 +1,244 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GameVerse: Global Game Resource Hub</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: #1a1a2e;
-            color: #eee;
-        }
-        header {
-            background-color: #16213e;
-            padding: 2rem;
-            text-align: center;
-            border-bottom: 3px solid #0f3460;
-        }
-        h1 {
-            color: #e94560;
-            margin: 0;
-            font-size: 2.5rem;
-        }
-        .tagline {
-            color: #aaa;
-            font-style: italic;
-        }
-        .container {
-            max-width: 1000px;
-            margin: 2rem auto;
-            padding: 0 2rem;
-        }
-        .section {
-            background-color: #16213e;
-            padding: 2rem;
-            margin: 2rem 0;
-            border-radius: 8px;
-        }
-        h2 {
-            color: #e94560;
-            border-bottom: 2px solid #0f3460;
-            padding-bottom: 0.5rem;
-        }
-        .features {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 1.5rem;
-            margin: 1.5rem 0;
-        }
-        .feature-item {
-            background-color: #0f3460;
-            padding: 1.5rem;
-            border-radius: 5px;
-        }
-        .cta-button {
-            display: inline-block;
-            background-color: #e94560;
-            color: white;
-            padding: 1rem 2rem;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-            margin: 1rem 0;
-            transition: background-color 0.3s;
-        }
-        .cta-button:hover {
-            background-color: #c23450;
-        }
-        footer {
-            text-align: center;
-            padding: 2rem;
-            background-color: #16213e;
-            margin-top: 3rem;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GameVerse 2025: Global Game Resource Hub</title>
+  <style>
+    body { font-family: Arial, Helvetica, sans-serif; line-height: 1.6; margin: 0; padding: 0; background: #0b1220; color: #e9eef7; }
+    header { background: #0f1b3a; padding: 2rem 1rem; border-bottom: 3px solid #173a6a; }
+    h1 { margin: 0 0 .25rem 0; color: #ff4d6d; font-size: 2.2rem; }
+    .tagline { color: #b3c2d1; font-style: italic; }
+    .container { max-width: 1100px; margin: 1.5rem auto 2.5rem; padding: 0 1rem; }
+    .section { background: #101a33; border: 1px solid #1f345d; border-radius: 10px; padding: 1.25rem; margin: 1rem 0; }
+    .section h2 { margin-top: 0; color: #8bd3ff; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1rem; }
+    .card { background: #0e1830; border: 1px solid #20365f; border-radius: 10px; padding: 1rem; }
+    .card h3 { margin-top: 0; color: #ffd166; }
+    .meta { color: #9fb3c8; font-size: .95rem; margin: .25rem 0 .5rem; }
+    .pill { display: inline-block; background: #1e2d55; color: #cfe7ff; padding: .18rem .5rem; border-radius: 999px; font-size: .8rem; margin-right: .35rem; }
+    .cta { display: inline-block; padding: .6rem 1rem; margin: .25rem .4rem 0 0; background: #2153a3; color: #fff; border-radius: 6px; text-decoration: none; }
+    .cta.secondary { background: #394660; }
+    footer { text-align: center; padding: 1.2rem; color: #9db3ca; border-top: 1px solid #1f345d; }
+    details { background: #0e1830; border: 1px solid #20365f; border-radius: 10px; padding: .6rem .9rem; }
+    summary { cursor: pointer; color: #9fe870; }
+    .note { color: #9db3ca; font-size: .9rem; }
+    .source a { color: #8bd3ff; }
+    nav.toc { background: #0f1b3a; border: 1px solid #173a6a; border-radius: 10px; padding: .8rem; }
+    nav.toc a { color: #cfe7ff; margin-right: .8rem; text-decoration: none; }
+    .inline { display: inline-block; }
+    code { background:#0b152b; border:1px solid #1f345d; padding:.2rem .35rem; border-radius:6px; }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>GameVerse: Global Game Resource Hub</h1>
-        <p class="tagline">Your ultimate destination for worldwide gaming resources, guides, and strategies</p>
-    </header>
+  <header>
     <div class="container">
-        <div class="section">
-            <h2>About GameVerse</h2>
-            <p>GameVerse is your comprehensive global game resource hub, bringing together the best gaming guides, walkthroughs, strategies, and resources from around the world. Whether you're a casual player or a hardcore gamer, we provide curated content to enhance your gaming experience across all platforms and genres.</p>
-            <p>Discover detailed game guides, character builds, weapon stats, quest walkthroughs, achievement tips, and community-driven resources to help you master your favorite games.</p>
-        </div>
-        <div class="section">
-            <h2>Key Features</h2>
-            <div class="features">
-                <div class="feature-item">
-                    <h3>📚 Comprehensive Guides</h3>
-                    <p>In-depth walkthroughs, strategy guides, and tutorials for popular games worldwide.</p>
-                </div>
-                <div class="feature-item">
-                    <h3>🌍 Global Resources</h3>
-                    <p>Curated gaming content from international communities and expert players.</p>
-                </div>
-                <div class="feature-item">
-                    <h3>⚔️ Strategy & Tips</h3>
-                    <p>Character builds, weapon comparisons, skill trees, and optimization strategies.</p>
-                </div>
-                <div class="feature-item">
-                    <h3>🎮 Multi-Platform Coverage</h3>
-                    <p>Resources for PC, PlayStation, Xbox, Nintendo Switch, and mobile gaming.</p>
-                </div>
-            </div>
-        </div>
-        <div class="section">
-            <h2>Popular Categories</h2>
-            <ul>
-                <li><strong>Action RPG Guides:</strong> Character progression, loot farming, boss strategies</li>
-                <li><strong>Strategy Game Resources:</strong> Build orders, unit compositions, map strategies</li>
-                <li><strong>Open World Adventures:</strong> Collectibles, side quests, exploration guides</li>
-                <li><strong>Competitive Gaming:</strong> Meta analysis, tier lists, pro player strategies</li>
-                <li><strong>Achievement Hunting:</strong> Complete trophy guides and rare achievement walkthroughs</li>
-            </ul>
-        </div>
-        <div class="section" style="text-align: center;">
-            <h2>Join the Community</h2>
-            <p>Access thousands of game guides and resources from players worldwide</p>
-            <a href="#" class="cta-button">Browse Guides</a>
-            <a href="#" class="cta-button">Submit Resource</a>
-        </div>
+      <h1>GameVerse 2025: Global Game Resource Hub</h1>
+      <p class="tagline">Live-updating hub for 2025’s hottest games, guides, trends, and resources.</p>
+      <nav class="toc">
+        <a href="#top-picks">Top Games 2025</a>
+        <a href="#platforms">By Platform</a>
+        <a href="#guides">Hot Guides</a>
+        <a href="#trends">Trends</a>
+        <a href="#resources">Resources</a>
+      </nav>
     </div>
-    <footer>
-        <p>© 2025 GameVerse: Global Game Resource Hub. All rights reserved.</p>
-        <p>Follow us for the latest gaming guides and resources!</p>
-    </footer>
-</body>
-</html>
+  </header>
+
+  <main class="container">
+    <section id="intro" class="section">
+      <h2>About This Page</h2>
+      <p>Curated highlights of 2025’s most popular and best-reviewed games with short descriptions, genres, and quick-start tips. This page auto-expands over time: new sections can be appended without changing existing structure.</p>
+      <p class="note">Data sources include editorial roundups and market trackers. See source links in each section.</p>
+    </section>
+
+    <section id="top-picks" class="section">
+      <h2>Most Popular And Best-Reviewed Games Of 2025</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Monster Hunter: Wilds</h3>
+          <div class="meta">Genre: Action RPG • Platforms: PlayStation, Xbox, PC</div>
+          <p>Expansive open zones, seamless co-op hunts, and deep gear progression make this 2025 sales leader a must-play for co-op fans.</p>
+          <span class="pill">Top seller (YTD)</span>
+        </article>
+        <article class="card">
+          <h3>The Elder Scrolls IV: Oblivion – Remastered</h3>
+          <div class="meta">Genre: Open-world RPG • Platforms: Xbox, PC</div>
+          <p>A modern remaster of a beloved classic with enhanced visuals and quality-of-life updates, inviting a new generation to Cyrodiil.</p>
+          <span class="pill">Top seller (YTD)</span>
+        </article>
+        <article class="card">
+          <h3>EA Sports College Football 26</h3>
+          <div class="meta">Genre: Sports • Platforms: PlayStation, Xbox</div>
+          <p>A triumphant return of college football with updated conferences, NIL-era modes, and robust dynasty management.</p>
+          <span class="pill">Hot new entry</span>
+        </article>
+        <article class="card">
+          <h3>Call of Duty: Black Ops 6</h3>
+          <div class="meta">Genre: FPS • Platforms: PlayStation, Xbox, PC</div>
+          <p>Signature fast-paced multiplayer and a cinematic campaign continue the franchise’s dominance in competitive shooters.</p>
+        </article>
+        <article class="card">
+          <h3>Elden Ring: Nightreign</h3>
+          <div class="meta">Genre: Action RPG • Platforms: PlayStation, Xbox, PC</div>
+          <p>An expansive follow-up with new regions and punishing bosses that reward precise combat and exploration.</p>
+        </article>
+        <article class="card">
+          <h3>Split Fiction</h3>
+          <div class="meta">Genre: Narrative Adventure • Platforms: Multi-platform</div>
+          <p>Bold branching storytelling with high critical marks; choices meaningfully reshape character arcs.</p>
+          <span class="pill">Critic favorite</span>
+        </article>
+        <article class="card">
+          <h3>Hades II</h3>
+          <div class="meta">Genre: Roguelike Action • Platforms: PC, Consoles</div>
+          <p>Masterful combat flow and meta-progression deliver a genre-leading roguelike experience with striking art and music.</p>
+          <span class="pill">10/10 (editorial)</span>
+        </article>
+        <article class="card">
+          <h3>Blue Prince</h3>
+          <div class="meta">Genre: Puzzle Adventure • Platforms: PC, Consoles</div>
+          <p>Procedural mansions and clever puzzle chains make each run a fresh mystery to solve.</p>
+        </article>
+      </div>
+      <p class="source">Sources: <a href="https://www.circana.com/post/top-10-video-games" target="_blank" rel="noopener">Circana YTD 2025 best-sellers</a>, <a href="https://www.gamespot.com/gallery/best-reviewed-games-2025/2900-6127/" target="_blank" rel="noopener">GameSpot best-reviewed 2025</a>, <a href="https://www.gamesradar.com/best-games-2025/" target="_blank" rel="noopener">GamesRadar picks</a>.</p>
+    </section>
+
+    <section id="platforms" class="section">
+      <h2>Popular Games By Platform</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>PC/Console Highlights</h3>
+          <ul>
+            <li>Monster Hunter: Wilds — Action RPG — Co-op hunting in vast biomes.</li>
+            <li>Oblivion Remastered — Open-world RPG — Classic world with modern polish.</li>
+            <li>Elden Ring: Nightreign — Action RPG — Challenging exploration and bosses.</li>
+            <li>Black Ops 6 — FPS — Competitive multiplayer and set-piece campaign.</li>
+            <li>Hades II — Roguelike — Lightning-fast combat and deep progression.</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Mobile: Most Downloaded & Trending</h3>
+          <ul>
+            <li>Subway Surfers — Endless Runner — Evergreen downloads leader.</li>
+            <li>Roblox — UGC Platform — Massive player-made experiences.</li>
+            <li>Free Fire — Battle Royale — Lightweight, global competitive play.</li>
+            <li>EA SPORTS FC Mobile — Sports — Authentic football on-the-go.</li>
+            <li>Stumble Guys — Party Battle — Quick, chaotic obstacle runs.</li>
+          </ul>
+          <p class="note">Source: Udonis 2025 mobile download trackers.</p>
+        </article>
+        <article class="card">
+          <h3>Strategy Standouts (2025)</h3>
+          <ul>
+            <li>Age of Darkness: Final Stand — RTS Survival — Massive “Death Nights.”</li>
+            <li>Cataclismo — Fortress Builder/RTS — Brick-by-brick strongholds.</li>
+            <li>Tower Dominion — Tower Defense Roguelike — Path-shaping tactics.</li>
+          </ul>
+          <p class="note">Source: Strategy & Wargaming 2025 features.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="guides" class="section">
+      <h2>Hot Guides And Quick Tips</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Monster Hunter: Wilds — Starter Hunt Route</h3>
+          <ul>
+            <li>Craft early element sets; match weaknesses for faster clears.</li>
+            <li>Use environmental traps to shorten hunts; capture for extra rewards.</li>
+            <li>Join SOS co-op for HR progression without long queues.</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Elden Ring: Nightreign — Early Build Ideas</h3>
+          <ul>
+            <li>Bleed/Arcane hybrid for boss melting; stack status procs.</li>
+            <li>Faith tank with guard counters; prioritize stamina/poise.</li>
+            <li>Explore new regions first for unique Ashes and talismans.</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Black Ops 6 — Multiplayer Meta</h3>
+          <ul>
+            <li>Control recoil with underbarrel grips; pick magazines for TTK breakpoints.</li>
+            <li>Anchor spawns in objective modes; use cross-map power positions.</li>
+            <li>Tune audio for footstep clarity; practice slide-cancel timings.</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Mobile Progression — Daily Loop</h3>
+          <ul>
+            <li>Prioritize time-gated events and claim all free currency.</li>
+            <li>Join active guilds for bonuses; rotate modes for efficient XP.</li>
+            <li>Benchmark devices; lower effects for battery-friendly FPS gains.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="trends" class="section">
+      <h2>Gaming Trends In 2025</h2>
+      <ul>
+        <li>Co-op-first AAA: Hunt loops and shared-world PvE dominate engagement time.</li>
+        <li>Remasters with QOL: Beloved classics (e.g., Oblivion) return with modern tech.</li>
+        <li>Roguelike polish: Premium runs (e.g., Hades II) with deep meta systems.</li>
+        <li>Mobile evergreen IP: Subway Surfers, Roblox, Free Fire continue to top downloads.</li>
+        <li>Strategy revival: Innovative RTS/TD hybrids bring fresh systems to PC.</li>
+      </ul>
+      <p class="note">Editorial and market observation synthesized from listed sources.</p>
+    </section>
+
+    <section id="resources" class="section">
+      <h2>Resources And References</h2>
+      <ul>
+        <li><a href="https://www.circana.com/post/top-10-video-games" target="_blank" rel="noopener">Circana: Top 10 Selling Video Games (YTD 2025)</a></li>
+        <li><a href="https://www.gamespot.com/gallery/best-reviewed-games-2025/2900-6127/" target="_blank" rel="noopener">GameSpot: The Best Games Of 2025 (So Far)</a></li>
+        <li><a href="https://www.gamesradar.com/best-games-2025/" target="_blank" rel="noopener">GamesRadar: Best Games to Play in 2025</a></li>
+        <li><a href="https://www.blog.udonis.co/mobile-marketing/mobile-games/most-downloaded-mobile-games" target="_blank" rel="noopener">Udonis: Most Downloaded Mobile Games (2025)</a></li>
+        <li><a href="https://strategyandwargaming.com/2025/06/20/the-15-best-strategy-games-of-2025-so-far/" target="_blank" rel="noopener">Strategy & Wargaming: Strategy Games 2025</a></li>
+      </ul>
+      <details>
+        <summary>How this page auto-expands</summary>
+        <p>Add new yearly sections by appending <code>&lt;section class="section" id="XXXX"&gt;...&lt;/section&gt;</code>. Keep the table of contents updated by adding anchor links inside the header nav.</p>
+      </details>
+    </section>
+
+    <section id="automation" class="section">
+      <h2>Automation Setup For Continuous Updates</h2>
+      <p class="note">To keep this page automatically refreshed, add a GitHub Action that rebuilds this site weekly from curated sources.</p>
+      <ol>
+        <li>Create <code>.github/workflows/update-games.yml</code> with a cron schedule and a script that fetches updated lists from the above sources’ public pages.</li>
+        <li>Parse titles/genres into JSON, then inject into the <code>#top-picks</code> and <code>#platforms</code> areas.</li>
+        <li>Commit the generated HTML to <code>index.html</code> and push.</li>
+      </ol>
+      <details>
+        <summary>Example workflow (pseudocode)</summary>
+<pre><code>name: Update Games 2025
+on:
+  schedule:
+    - cron: '0 6 * * 1'  # Every Monday 06:00 UTC
+  workflow_dispatch: {}
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: '20' }
+      - run: npm ci || true
+      - run: node scripts/update-games.js
+      - run: |
+          git config user.name "GameVerse Bot"
+          git config user.email "bot@gameverse"
+          git add index.html data/*.json || true
+          git commit -m "chore: weekly games refresh" || echo "No changes"
+          git push
+</code></pre>
+      </details>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 GameVerse. Curated summaries for education and research. All trademarks are property
