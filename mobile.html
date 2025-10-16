@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Games - Gaming Hub</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            color: #fff;
+            line-height: 1.6;
+        }
+        header {
+            background: rgba(0, 0, 0, 0.3);
+            padding: 1.5rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 2rem;
+        }
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #fff;
+            text-decoration: none;
+        }
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+        .nav-links a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        .nav-links a:hover {
+            color: #ffd700;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+        }
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            text-align: center;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        .category-description {
+            text-align: center;
+            font-size: 1.2rem;
+            margin-bottom: 3rem;
+            opacity: 0.9;
+        }
+        .articles {
+            display: grid;
+            gap: 2rem;
+        }
+        .article {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 2rem;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .article:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+        .article h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: #ffd700;
+        }
+        .article-meta {
+            display: flex;
+            gap: 1.5rem;
+            margin-bottom: 1rem;
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+        .article-content {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 1rem;
+        }
+        footer {
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+            background: rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">Gaming Hub</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="rpg.html">RPG</a></li>
+                <li><a href="strategy.html">Strategy</a></li>
+                <li><a href="shooter.html">Shooter</a></li>
+                <li><a href="mobile.html">Mobile</a></li>
+                <li><a href="adventure.html">Adventure</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Mobile Games</h1>
+        <p class="category-description">Discover the best gaming experiences on the go with mobile titles that rival console quality</p>
+
+        <div class="articles">
+            <article class="article">
+                <h2>How Mobile Gaming Became a Billion-Dollar Industry</h2>
+                <div class="article-meta">
+                    <span>📅 October 14, 2025</span>
+                    <span>✍️ By Jessica Wang</span>
+                    <span>⏱️ 7 min read</span>
+                </div>
+                <div class="article-content">
+                    <p>Mobile gaming has evolved from simple puzzle games to complex, fully-featured experiences that rival traditional gaming platforms. With over 3 billion mobile gamers worldwide, the industry now generates more revenue than console and PC gaming combined.</p>
+                    <p>The success of mobile gaming stems from its accessibility and business model innovation. Free-to-play games with optional in-app purchases have proven incredibly lucrative, while premium titles like Genshin Impact demonstrate that mobile devices can deliver console-quality graphics and gameplay.</p>
+                    <p>Looking ahead, cloud gaming services and 5G connectivity promise to further blur the lines between mobile and traditional gaming. Soon, players will be able to stream AAA titles directly to their phones with minimal latency, making high-end gaming truly portable.</p>
+                </div>
+            </article>
+
+            <article class="article">
+                <h2>The Best Mobile RPGs That Rival PC Experiences</h2>
+                <div class="article-meta">
+                    <span>📅 October 12, 2025</span>
+                    <span>✍️ By Kevin Park</span>
+                    <span>⏱️ 6 min read</span>
+                </div>
+                <div class="article-content">
+                    <p>Mobile RPGs have come a long way from their humble beginnings. Modern titles like Honkai: Star Rail, Raid: Shadow Legends, and AFK Arena offer deep progression systems, compelling narratives, and stunning visuals that were once exclusive to PC and console.</p>
+                    <p>What makes these games special is how they adapt RPG mechanics to mobile play sessions. Auto-battle features, sweep functions, and idle progression allow players to make meaningful progress even with short play sessions, while still offering manual control for those who want deeper engagement.</p>
+                    <p>The gacha system, while controversial, has enabled developers to continuously update these games with new content for years. When implemented fairly, it creates a live service model that keeps communities engaged and gives players regular reasons to return.</p>
+                </div>
+            </article>
+
+            <article class="article">
+                <h2>Mobile Esports: The New Frontier of Competitive Gaming</h2>
+                <div class="article-meta">
+                    <span>📅 October 10, 2025</span>
+                    <span>✍️ By Daniel Cruz</span>
+                    <span>⏱️ 5 min read</span>
+                </div>
+                <div class="article-content">
+                    <p>Mobile esports has exploded in popularity, with games like Mobile Legends, PUBG Mobile, and Call of Duty Mobile hosting tournaments with multi-million dollar prize pools. What was once considered casual gaming has evolved into serious competitive arena.</p>
+                    <p>The accessibility of mobile esports is its greatest strength. Unlike traditional esports that require expensive gaming PCs or consoles, anyone with a smartphone can compete. This has led to booming competitive scenes in regions where PC gaming is less prevalent, particularly in Southeast Asia and Latin America.</p>
+                    <p>Professional mobile esports teams are now as organized as their PC counterparts, with dedicated coaches, analysts, and training facilities. As devices become more powerful and touchscreen controls more refined, the skill ceiling for mobile games continues to rise, creating increasingly spectacular competitive matches.</p>
+                </div>
+            </article>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Gaming Hub. All rights reserved.</p>
+    </footer>
+</body>
+</html>
